@@ -1,0 +1,18 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja /Users/saraazevedo/Desktop/da2324_p01_student/.. -G Ninja -S /Users/saraazevedo/Desktop/da2324_p01_student -B /Users/saraazevedo/Desktop/da2324_p01_student/cmake-build-release
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/Users/saraazevedo/Desktop"
+
+
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/Users/saraazevedo/Desktop/da2324_p01_student/.."
+
+
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.26 or higher is required.  You are running version 3.24.2
+
+
+-- Configuring incomplete, errors occurred!
