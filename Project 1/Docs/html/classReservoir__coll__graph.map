@@ -1,0 +1,5 @@
+<map id="Reservoir" name="Reservoir">
+<area shape="rect" id="node1" title="Class representing a reservoir within the network." alt="" coords="5,171,89,197"/>
+<area shape="rect" id="node2" href="$classNode.html" title="Class that represents a node in a graph." alt="" coords="19,95,75,121"/>
+<area shape="rect" id="node3" href="$classPipe.html" title="Class representing a pipe connecting two nodes." alt="" coords="22,5,73,32"/>
+</map>
