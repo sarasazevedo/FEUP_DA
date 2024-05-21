@@ -1,0 +1,127 @@
+\hypertarget{classEdge}{}\doxysection{Edge Class Reference}
+\label{classEdge}\index{Edge@{Edge}}
+
+
+{\ttfamily \#include $<$Edge.\+h$>$}
+
+
+
+Collaboration diagram for Edge\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEdge_acd08327e3349938daada9b6457b04e9f}{Edge}} (\mbox{\hyperlink{classVertex}{Vertex}} $\ast$\mbox{\hyperlink{classEdge_a50339c1a85710ca827d4e3865727ffd7}{dest}}, double w)
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}} $\ast$ \mbox{\hyperlink{classEdge_a5cda44e9ba257b03963a1ac301371a59}{get\+Dest}} () const
+\item 
+double \mbox{\hyperlink{classEdge_a1caaffca117bab3ff5b7387623a356f8}{get\+Weight}} () const
+\item 
+void \mbox{\hyperlink{classEdge_a1ecc1e562c2f7f07d6897dd9e54e7cbd}{set\+Dest}} (\mbox{\hyperlink{classVertex}{Vertex}} $\ast$\mbox{\hyperlink{classEdge_a50339c1a85710ca827d4e3865727ffd7}{dest}})
+\item 
+void \mbox{\hyperlink{classEdge_a452013a3525db6e2dbbbcb614acf728b}{set\+Weight}} (double \mbox{\hyperlink{classEdge_a6d0148402e635354c03a151c77fcbdd8}{weight}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}} $\ast$ \mbox{\hyperlink{classEdge_a50339c1a85710ca827d4e3865727ffd7}{dest}}
+\item 
+double \mbox{\hyperlink{classEdge_a6d0148402e635354c03a151c77fcbdd8}{weight}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEdge_a1251d18f08324022e8e73506c3768f3c}{Vertex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEdge}{Edge}} class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdge_acd08327e3349938daada9b6457b04e9f}\label{classEdge_acd08327e3349938daada9b6457b04e9f}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}} $\ast$}]{dest,  }\item[{double}]{w }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{classEdge}{Edge}} object. 
+\begin{DoxyParams}{Parameters}
+{\em dest} & \\
+\hline
+{\em w} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdge_a5cda44e9ba257b03963a1ac301371a59}\label{classEdge_a5cda44e9ba257b03963a1ac301371a59}} 
+\index{Edge@{Edge}!getDest@{getDest}}
+\index{getDest@{getDest}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getDest()}{getDest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ Edge\+::get\+Dest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the destination vertex. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a1caaffca117bab3ff5b7387623a356f8}\label{classEdge_a1caaffca117bab3ff5b7387623a356f8}} 
+\index{Edge@{Edge}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily double Edge\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the weight of the edge. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a1ecc1e562c2f7f07d6897dd9e54e7cbd}\label{classEdge_a1ecc1e562c2f7f07d6897dd9e54e7cbd}} 
+\index{Edge@{Edge}!setDest@{setDest}}
+\index{setDest@{setDest}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{setDest()}{setDest()}}
+{\footnotesize\ttfamily void Edge\+::set\+Dest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}} $\ast$}]{dest }\end{DoxyParamCaption})}
+
+Sets the destination vertex. 
+\begin{DoxyParams}{Parameters}
+{\em dest} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_a452013a3525db6e2dbbbcb614acf728b}\label{classEdge_a452013a3525db6e2dbbbcb614acf728b}} 
+\index{Edge@{Edge}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily void Edge\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{weight }\end{DoxyParamCaption})}
+
+Sets the weight of the edge. 
+\begin{DoxyParams}{Parameters}
+{\em weight} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classEdge_a1251d18f08324022e8e73506c3768f3c}\label{classEdge_a1251d18f08324022e8e73506c3768f3c}} 
+\index{Edge@{Edge}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{Vertex}{Vertex}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classVertex}{Vertex}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+Allows the \mbox{\hyperlink{classVertex}{Vertex}} class to access private members of \mbox{\hyperlink{classEdge}{Edge}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEdge_a50339c1a85710ca827d4e3865727ffd7}\label{classEdge_a50339c1a85710ca827d4e3865727ffd7}} 
+\index{Edge@{Edge}!dest@{dest}}
+\index{dest@{dest}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{dest}{dest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVertex}{Vertex}}$\ast$ Edge\+::dest\hspace{0.3cm}{\ttfamily [protected]}}
+
+The destination vertex. \mbox{\Hypertarget{classEdge_a6d0148402e635354c03a151c77fcbdd8}\label{classEdge_a6d0148402e635354c03a151c77fcbdd8}} 
+\index{Edge@{Edge}!weight@{weight}}
+\index{weight@{weight}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily double Edge\+::weight\hspace{0.3cm}{\ttfamily [protected]}}
+
+The weight of the edge. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Edge.\+h\item 
+Edge.\+cpp\end{DoxyCompactItemize}

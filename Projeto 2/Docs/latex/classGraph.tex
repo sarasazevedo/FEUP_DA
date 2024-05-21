@@ -1,0 +1,146 @@
+\hypertarget{classGraph}{}\doxysection{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+
+
+Represents a graph consisting of vertices and edges.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraph_a902c5b3eacb66d60752525ab23297a95}\label{classGraph_a902c5b3eacb66d60752525ab23297a95}} 
+\mbox{\hyperlink{classGraph_a902c5b3eacb66d60752525ab23297a95}{$\sim$\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classGraph}{Graph}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVertex}{Vertex}} $\ast$ \mbox{\hyperlink{classGraph_a089f7fc73ea9976295d387846ad36c69}{find\+Vertex}} (const int \&id) const
+\begin{DoxyCompactList}\small\item\em Finds a vertex in the graph. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGraph_ae4de7be0f8c6523474f563b55e9a433e}{add\+Vertex}} (\mbox{\hyperlink{classVertex}{Vertex}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Adds a vertex to the graph. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGraph_aa5e167146b842b1c4b5bb9b1c9905db3}{add\+Bidirectional\+Edge}} (const int \&source, const int \&dest, double w)
+\begin{DoxyCompactList}\small\item\em Adds a bidirectional edge between two vertices in the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_abb5e0517e2979c54eebdafc2a9875e8f}{get\+Num\+Vertex}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of vertices in the graph. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ int, \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{classGraph_a1e805d1e47b847b9665cf978aa31ab4a}{get\+Vertex\+Set}} () const
+\begin{DoxyCompactList}\small\item\em Gets the set of vertices in the graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_a68da2ec648cdbae540ce5d324b1c5461}{set\+Vertex\+Set}} (const unordered\+\_\+map$<$ int, \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ $>$ \&set)
+\begin{DoxyCompactList}\small\item\em Sets the set of vertices in the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraph_aee94e3590c405f854559bc2e341b7948}\label{classGraph_aee94e3590c405f854559bc2e341b7948}} 
+unordered\+\_\+map$<$ int, \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{classGraph_aee94e3590c405f854559bc2e341b7948}{vertex\+Set}}
+\begin{DoxyCompactList}\small\item\em The set of vertices in the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a graph consisting of vertices and edges. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_aa5e167146b842b1c4b5bb9b1c9905db3}\label{classGraph_aa5e167146b842b1c4b5bb9b1c9905db3}} 
+\index{Graph@{Graph}!addBidirectionalEdge@{addBidirectionalEdge}}
+\index{addBidirectionalEdge@{addBidirectionalEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addBidirectionalEdge()}{addBidirectionalEdge()}}
+{\footnotesize\ttfamily bool Graph\+::add\+Bidirectional\+Edge (\begin{DoxyParamCaption}\item[{const int \&}]{source,  }\item[{const int \&}]{dest,  }\item[{double}]{w }\end{DoxyParamCaption})}
+
+
+
+Adds a bidirectional edge between two vertices in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source vertex id. \\
+\hline
+{\em dest} & The destination vertex id. \\
+\hline
+{\em w} & The weight of the edge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the edge was added, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_ae4de7be0f8c6523474f563b55e9a433e}\label{classGraph_ae4de7be0f8c6523474f563b55e9a433e}} 
+\index{Graph@{Graph}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily bool Graph\+::add\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Adds a vertex to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The vertex to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the vertex was added, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a089f7fc73ea9976295d387846ad36c69}\label{classGraph_a089f7fc73ea9976295d387846ad36c69}} 
+\index{Graph@{Graph}!findVertex@{findVertex}}
+\index{findVertex@{findVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findVertex()}{findVertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ Graph\+::find\+Vertex (\begin{DoxyParamCaption}\item[{const int \&}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Finds a vertex in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the vertex to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the vertex if found, nullptr otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_abb5e0517e2979c54eebdafc2a9875e8f}\label{classGraph_abb5e0517e2979c54eebdafc2a9875e8f}} 
+\index{Graph@{Graph}!getNumVertex@{getNumVertex}}
+\index{getNumVertex@{getNumVertex}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getNumVertex()}{getNumVertex()}}
+{\footnotesize\ttfamily int Graph\+::get\+Num\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of vertices in the graph. 
+
+\begin{DoxyReturn}{Returns}
+The number of vertices in the graph. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a1e805d1e47b847b9665cf978aa31ab4a}\label{classGraph_a1e805d1e47b847b9665cf978aa31ab4a}} 
+\index{Graph@{Graph}!getVertexSet@{getVertexSet}}
+\index{getVertexSet@{getVertexSet}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getVertexSet()}{getVertexSet()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ int, \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ $>$ Graph\+::get\+Vertex\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the set of vertices in the graph. 
+
+\begin{DoxyReturn}{Returns}
+An unordered map of vertices in the graph. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a68da2ec648cdbae540ce5d324b1c5461}\label{classGraph_a68da2ec648cdbae540ce5d324b1c5461}} 
+\index{Graph@{Graph}!setVertexSet@{setVertexSet}}
+\index{setVertexSet@{setVertexSet}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{setVertexSet()}{setVertexSet()}}
+{\footnotesize\ttfamily void Graph\+::set\+Vertex\+Set (\begin{DoxyParamCaption}\item[{const unordered\+\_\+map$<$ int, \mbox{\hyperlink{classVertex}{Vertex}} $\ast$ $>$ \&}]{set }\end{DoxyParamCaption})}
+
+
+
+Sets the set of vertices in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em set} & An unordered map of vertices to set in the graph. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph.\+h\item 
+Graph.\+cpp\end{DoxyCompactItemize}
